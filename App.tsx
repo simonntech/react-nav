@@ -1,22 +1,7 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import HomeScreen from './src/screens/HomeScreen';
-import GalleryScreen from './src/screens/GalleryScreen';
+import { Routes } from './src/routes';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <GalleryScreen/>
-      <StatusBar style="auto" />
-    </View>
+    <Routes />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

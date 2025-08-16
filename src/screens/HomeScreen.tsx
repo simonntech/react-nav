@@ -5,6 +5,7 @@ export default function HomeScreen() {
     return (
         <View style={{flex: 1, backgroundColor: 'blue'}}>
             <Text style={{color: 'white', fontSize: 24}}>Home works</Text>
+            <StatusBar style='auto'></StatusBar>
         </View>
     )
 }
