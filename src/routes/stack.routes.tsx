@@ -10,6 +10,11 @@ export function StackRoutes() {
             <Screen
                 name='home'
                 component={HomeScreen}
+                options={{
+                    title: 'Menu Principal',
+                    headerTintColor: '#3e0a79ff',
+                    headerShown: false
+                }}
             />
             <Screen
                 name='gallery'
