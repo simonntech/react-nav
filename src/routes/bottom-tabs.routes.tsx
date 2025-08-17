@@ -1,19 +1,15 @@
-import { createStackNavigator } from '@react-navigation/stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import HomeScreen from '../screens/HomeScreen';
 import GalleryScreen from '../screens/GalleryScreen';
 
-const { Screen, Navigator } = createStackNavigator();
+const {Navigator, Screen} = createBottomTabNavigator();
 
-export function StackRoutes() {
+export function BottomTabsRoutes() {
     return (
         <Navigator>
             <Screen
                 name='home'
                 component={HomeScreen}
-                options={{
-                    title: 'Menu Principal',
-                    headerTintColor: '#3e0a79ff'
-                }}
             />
             <Screen
                 name='gallery'
